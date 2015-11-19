@@ -1,0 +1,26 @@
+#N canvas 778 186 658 905 10;
+#X obj 143 110 hsl 128 15 0 6.28 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5183 1;
+#X obj 308 113 hsl 128 15 0 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5722 1;
+#X obj 140 327 gcanvas 200 200;
+#X msg 293 279 size 200 200;
+#X msg 167 255 reset;
+#X obj 140 227 t a b;
+#X msg 294 253 color grey 0;
+#X msg 140 281 line red 100 100 \$1 \$2;
+#X obj 140 200 AngleLongTocoord 100 100 100;
+#X obj 140 557 coordToAngleLongGcanvas-abstract;
+#X connect 0 0 8 0;
+#X connect 1 0 8 1;
+#X connect 2 0 9 0;
+#X connect 2 1 9 1;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 7 0;
+#X connect 5 1 4 0;
+#X connect 6 0 2 0;
+#X connect 7 0 2 0;
+#X connect 8 0 5 0;
+#X connect 9 0 0 0;
+#X connect 9 1 1 0;

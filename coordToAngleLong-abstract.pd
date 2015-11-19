@@ -1,0 +1,25 @@
+#N canvas 712 307 868 447 10;
+#X obj 42 -78 t b f;
+#X obj 214 133 expr sqrt(($f1 * $f1) + ($f2 * $f2));
+#X obj 42 -128 inlet;
+#X obj 224 -124 inlet;
+#X obj 29 136 expr atan2( $f1 \, $f2 );
+#X text 84 -128 x;
+#X text 273 -127 y;
+#X obj 29 208 outlet;
+#X obj 214 209 outlet;
+#X text 250 226 longueur;
+#X obj 29 173 + 3.14;
+#X text 49 228 angle en Pi Rad (0->2Pi);
+#X text 402 -65 transforme coordonnées en angle et distance attention
+le centre doit etre 0 \; 0;
+#X connect 0 0 1 0;
+#X connect 0 0 4 0;
+#X connect 0 1 1 1;
+#X connect 0 1 4 1;
+#X connect 1 0 8 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 10 0;
+#X connect 10 0 7 0;
